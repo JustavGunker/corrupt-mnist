@@ -1,16 +1,10 @@
 import torch
 import typer
-from src.package.model import MyAwesomeModel
 
 from data import corrupt_mnist
+from src.package.model import MyAwesomeModel
 
-DEVICE = torch.device(
-    "cuda"
-    if torch.cuda.is_available()
-    else "mps"
-    if torch.backends.mps.is_available()
-    else "cpu"
-)
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
 
 def evaluate(model_checkpoint: str) -> None:
