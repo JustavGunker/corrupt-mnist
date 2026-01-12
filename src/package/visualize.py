@@ -1,11 +1,18 @@
 import matplotlib.pyplot as plt
 import torch
 import typer
-from package.model import MyAwesomeModel
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
+from src.package.model import MyAwesomeModel
+
+DEVICE = torch.device(
+    "cuda"
+    if torch.cuda.is_available()
+    else "mps"
+    if torch.backends.mps.is_available()
+    else "cpu"
+)
 
 
 def visualize(model_checkpoint: str, figure_name: str = "embeddings.png") -> None:

@@ -1,6 +1,8 @@
-from src.package.model import MyAwesomeModel
-import torch
 import pytest
+import torch
+
+from src.package.model import MyAwesomeModel
+
 
 def test_model():
     model = MyAwesomeModel()
