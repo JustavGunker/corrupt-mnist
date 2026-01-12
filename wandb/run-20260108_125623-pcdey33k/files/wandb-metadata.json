@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.11.13",
+  "startedAt":  "2026-01-08T11:56:23.031033Z",
+  "program":  "C:\\Users\\gusta\\OneDrive - Danmarks Tekniske Universitet\\Semester7\\MLOPS\\dtu_mlops\\s4_debugging_and_logging\\my_package\\src\\package\\train.py",
+  "codePath":  "..\\..\\..\\..\\..\\..\\..\\Users\\gusta\\OneDrive - Danmarks Tekniske Universitet\\Semester7\\MLOPS\\dtu_mlops\\s4_debugging_and_logging\\my_package\\src\\package\\train.py",
+  "codePathLocal":  "src\\package\\train.py",
+  "git":  {
+    "remote":  "https://github.com/SkafteNicki/dtu_mlops",
+    "commit":  "897e134b7c4667663ac8bffdfee03425038bbd9c"
+  },
+  "email":  "s224031@dtu.dk",
+  "root":  "C:\\Users\\gusta\\OneDrive - Danmarks Tekniske Universitet\\Semester7\\MLOPS\\dtu_mlops\\s4_debugging_and_logging\\my_package",
+  "host":  "GustavLaptop",
+  "executable":  "C:\\Users\\gusta\\miniforge3\\envs\\02452\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "509722226688",
+      "used":  "446872576000"
+    }
+  },
+  "memory":  {
+    "total":  "8274370560"
+  },
+  "writerId":  "6kenbp76abxbqwcbswmd5dgdno40jun0"
+}
