@@ -1,0 +1,19 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  id: 'Build container image'
+  args: [
+    'build',
+    '.',
+    '-t',
+    'europe-west4-docker.pkg.dev/handy-parity-484212-t1/my-container-registry/main',
+    '-f',
+    'Dockerfile'
+  ]
+- name: 'gcr.io/cloud-builders/docker'
+  id: 'Push container image'
+  args: [
+    'push',
+    'europe-west4-docker.pkg.dev/handy-parity-484212-t1/my-container-registry/main'
+  ]
+options:
+  logging: CLOUD_LOGGING_ONLY
