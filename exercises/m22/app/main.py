@@ -1,7 +1,11 @@
 # import re
-from fastapi import FastAPI, UploadFile, File
-app = FastAPI()
 from http import HTTPStatus
+
+from fastapi import FastAPI, File, UploadFile
+
+app = FastAPI()
+
+
 
 @app.get("/")
 def root():
